@@ -1,0 +1,87 @@
+.mans {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    /* Add padding for breathing room */
+}
+
+.maincontener {
+    background-color: black;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    /* Wrap items for smaller screens */
+    gap: 20px;
+    /* Add space between items */
+    margin: 0 auto;
+    /* Center the container */
+    padding: 20px 10px;
+    /* Responsive padding */
+}
+
+.items {
+    background-color: white;
+    color: black;
+    flex: 1 1 calc(33.333% - 40px);
+    /* 3 items per row with space */
+    max-width: calc(33.333% - 40px);
+    /* Prevent overflow */
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* Stack content vertically */
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menshop {
+    width: 100%;
+    /* Ensure images scale with the item */
+    height: auto;
+    border-radius: 10px;
+}
+
+.redcolor {
+    color: red;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1024px) {
+    .items {
+        flex: 1 1 calc(50% - 20px);
+        /* 2 items per row */
+        max-width: calc(50% - 20px);
+    }
+
+    .maincontener {
+        gap: 15px;
+        /* Reduce gap for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .items {
+        flex: 1 1 100%;
+        /* Full width for smaller screens */
+        max-width: 100%;
+    }
+
+    .maincontener {
+        padding: 15px 5px;
+        /* Reduce padding for small devices */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+        /* Reduce heading size for mobile screens */
+        text-align: center;
+    }
+
+    .redcolor {
+        font-size: 1rem;
+        /* Adjust font size for prices */
+    }
+}

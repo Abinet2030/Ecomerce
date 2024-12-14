@@ -1,0 +1,28 @@
+.test{
+  color: black;
+  height: 200px;
+  width: 100%;
+  padding-left: 23px;
+  margin-top: 10px;
+  align-items: flex;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding-top: 1%;
+ 
+}
+.test1{
+  width: 23%;
+  height: 200px;
+  background-color: aliceblue;
+  gap: 9px;
+  
+  border-radius: 3%;
+}
+.testimg{
+
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
